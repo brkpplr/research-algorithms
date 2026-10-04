@@ -1,0 +1,16 @@
+version: 2
+multi-ecosystem-groups:
+  all-dependencies:
+    schedule:
+      interval: "weekly"
+updates:
+  - package-ecosystem: "nuget"
+    directory: "/CSharpAlgorithms/CSharpAlgorithms"
+    patterns:
+      - "*"
+    multi-ecosystem-group: "all-dependencies"
+  - package-ecosystem: "nuget"
+    directory: "/CSharpAlgorithms/CSharpAlgorithmsTests"
+    patterns:
+      - "*"
+    multi-ecosystem-group: "all-dependencies"
